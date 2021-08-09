@@ -1,0 +1,330 @@
+    /* 
+        font-family: 'Homemade Apple', cursive;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Slab', serif; 
+        */
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            /* um elemneto abaixo do outro */
+            flex-direction: column;
+        }
+        header{
+            flex: 1;
+            background-color: #0c0f11;
+            color: #fff;
+            font-family: 'Homemade Apple', cursive;
+        }
+        header h1{
+            padding-left: 200px;
+            padding-top: 40px;
+        }
+        header nav{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 40px;
+        }
+        /* não aparecerem os ícones */
+        header #menu, 
+        header nav #fechar{
+            display: none;
+        }
+        header nav ul{
+            list-style: none;
+        }
+        header nav ul li{
+            background-color: #fff;
+            display: inline-block;
+            padding: 20px 100px;
+            transition: ease 0.5s;
+        }
+        header nav ul li a{
+            font-family: 'Roboto Slab', serif;
+            color: #000;
+            text-decoration: none;
+            font-size: 12pt;
+            /* alteração das letras uppercase todas as letras maiusculas */
+            /* capitalize = a primeira letra maiuscula */
+            text-transform: capitalize;
+        }
+        /* quando eu passar o ponteiro do mousse no "li" ele formata o "a"*/
+        header nav ul li:hover{
+            background-color: rgb(109, 104, 105);
+        }
+        header nav ul li:hover > a{
+            color: #fff;
+        }
+        main{
+            flex: 1;
+        }
+        main #painel{
+            height: 400px;
+            background-image: url("../img/banner.jpg");
+            background-size: 100%;
+            background-position: 0px -300%;
+        }
+        footer{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            background-color: #263238;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10pt;
+            padding: 50px;
+        }
+        footer #redes, footer #end{
+            flex: 1;
+            color: #fff;
+        }
+
+        footer #end{
+            text-align: right;
+            padding-right: 50px;
+            padding-top: 10px;
+        }
+        
+        footer #redes ul{
+            /* para tirar as bolinhas */
+            list-style: none;
+        }
+        
+        footer #redes ul li{
+            display: inline-block;
+        }
+
+        footer #redes ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        footer #redes ul li a i{
+            font-size: 30px;
+            color: #fff;
+            margin: 10px;
+        }
+        /* empurrar os break points para baixo para iniciar a formatação css da página INDEX */
+
+        main #faixahome1{
+            padding: 50px 100px;
+            /* 0.90 é uma transparência */
+            background-color: rgba(240,240,240,0.90);
+        }
+        main #faixahome1 h2{
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px;
+        }
+
+        main #faixahome1 div{
+            font-family: 'Roboto Slab', serif; 
+            padding-left: 100px; 
+            padding-right: 100px;
+            /* distancia entre as linhas */
+            line-height: 30px;
+            text-align: justify;
+        }
+
+
+        main form{
+            width: 40%;
+            padding: 20px;
+            /* formato de CRUZ emcima e embaixo primeiro valor direita esquerda automático */
+            margin: 30px auto;
+        }
+        /* inputs nome, email, telefone e submit fiquem coma a mesa formatação */
+        main form input, 
+        main form textarea{
+            width: 90%;
+            padding: 10px;
+            display: block;
+            margin: 5px;
+        }
+        main form textarea{
+            height: 200px;
+        }
+        /* formatação do botão ENVIAR */
+        main form input[type=submit]{
+            width: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ---------break points para o projeto ----------- */
+         /* 3 intervalos de break point*/
+        
+         /*-------------------* Telas de smartphones ---------*/
+        @media (min-width: 0px) and (max-width: 575.98px) {
+            header h1{
+                padding: 0;
+                text-align: center;
+        }
+        main #painel {
+            height: 100px;
+            background-position: 0px -20px;
+        }
+        header nav{
+        background-color: #000;
+        /* v(viewport) h (height); 100% da altura da tela do dispositivo */
+        height: 100vh;             
+        /* descolar o layout*/
+        position: fixed;
+        /* fazer a barra iniciar no topo do navegador e do lado de fora a esquerda do navegador */
+        top: 0;
+        /* esconder o menu da tela do dispositivo */
+        left: -250px;
+        width: 200px;
+        padding-top: 100px;
+        text-align: left;
+        /* animação */
+        transition: ease 0.5s;
+        }
+            header nav ul li{
+                display: block;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #000;
+    
+            }
+            header nav ul li a{
+                color: #fff;
+            }
+            /* fazer os ícones ficarem visíveis */
+            header #menu, 
+            header nav #fechar{
+                display: block;
+            }
+            header #menu{
+                position: fixed;
+                top: 10px;
+                left: 10px;
+            }
+            header nav #fechar{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+    
+        }
+
+        /* --------------- Telas de tablets ------------------ */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            header h1{
+                padding: 0;
+                text-align: center;
+        }
+        main #painel {
+            height: 250px;
+            background-position: 0px -80px;
+        }
+        header nav{
+            background-color: #000;
+            /* v(viewport) h (height); 100% da altura da tela do dispositivo */
+            height: 100vh;             
+            /* descolar o layout*/
+            position: fixed;
+            /* fazer a barra iniciar no topo do navegador e do lado de fora a esquerda do navegador */
+            top: 0;
+            /* esconder o menu da tela do dispositivo */
+            left: -250px;
+            width: 200px;
+            padding-top: 100px;
+            text-align: left;
+            /* animação */
+            transition: ease 0.5s;
+            /* empinhamento, como camada para colocar para cima valor bem alto */
+            z-index: 10000;
+        }
+        header nav ul li{
+            display: block;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #000;
+
+        }
+        header nav ul li a{
+            color: #fff;
+        }
+        /* fazer os ícones ficarem visíveis */
+        header #menu, 
+        header nav #fechar{
+            display: block;
+        }
+        header #menu{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        header nav #fechar{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        /* Break point - Formatação para a página HOME nas faixas 1 e 2 */
+            main #faixahome1 div{
+            padding-left: 10px; 
+            padding-right: 10px;
+            }
+            main #faixahome1{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        main{
+            /* !important = mais importante tem que prevalecer sobre outras formatações */
+            background-image: url("../img/banner.jpg")!important;
+            background-size: 200% !important;
+            /* centro na horizontal centro na vertical */
+            /* se estivesse usando essa referência em outro lugar teria que usar o IMPORTANT */
+            background-position: center center;
+
+        }
+       
+        main form{
+            width: 90%;
+        }
+        /* ajustar o botão enviar */
+        main form input[type="submit"]{
+            width: 15%;
+        }   
+        
+        }
+        /* ----------Telas de desktops ----------*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            header nav{
+                width: 100%;
+        }
+
+        /* Break point - Formatação para a página HOME nas faixas 1 e 2 */
+        main #faixahome1 div{
+        padding-left: 10px; 
+        padding-right: 10px;
+        }
+        main #faixahome1{
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+        
+        /* elemento CLASS tema referência como ponto */
+        /* ID usamos # */
+        .ajustePHome{
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        }    
+
+        
+        /* Break point - Formatação para a página CONTATO */
+        main form{
+        width: 90%;
+        }
+        /* ajustar o botão enviar */
+        main form input[type="submit"]{
+            width: 15%;
+        }   
+        
+    }
+       
