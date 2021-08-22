@@ -5,62 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express Contabilidade</title>
+    <meta name="description" content="Atendimento especializado nas questões contábeis e jurídicas de empresas de pequeno porte e microempresas.">
+    <!--  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Link de css para a formatação de fontes do Google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
 
-<!-- Link para ícones do fontawesome - iconegrafia  -->
-<!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
-<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+    <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
+    <script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
 
+    <!-- Link de css para nosso arquivo styles -->
+    <!-- link:css -->
+    <link rel="stylesheet" href="css/styles.css">
 
-<!-- Link de css arquivo styles -->
-<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-     <header>
-        <h1>Express Contabilidade</h1>
+    <header>
+        <a href="index.html"><img src="img/LogoExpressContabilidade(White)PNG.png" alt="logotipo">
+        </a>
+               
         <span id= "menu">
             <!--  javascript  para abrir o menu -->
             <i class="fas fa-bars" onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>
         </span>
         <nav>
-            <!-- span#fechar -->
             <span id="fechar">
                 <!--  javascript  para abrir o menu -->
                 <i class="fas fa-window-close" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
             </span>
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="servicos.html">serviços</a></li>
-                <li><a href="contato.html">contato</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="servicos.html">SERVIÇOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
             </ul>
         </nav>
+        
     </header>
-        <main>
-        
-           
-        
+     <main>
+        <div class="layout">
+            <h2>Nossos serviços</h2>
+        </div>
+        <div id="banner">
+            <picture>
+                <source media="(max-width: 575.98px)" srcset="img/servicosMobile.jpg">
+                <source media="(max-width: 767.98px)" srcset="img/servicosMobile.jpg">
+                <source media="(min-width: 768px)" srcset="img/servicosDesktop.jpg">
+                <img src="img/servicosDesktop.jpg" alt="Servicos">
 
-
+            </picture>
+            <div id="servico">  
+                <ul> 
+                    <li>&#10045; Abertura em 24 horas com Certificado Digital e CPF;</li>
+                    <li>&#10045; Emissão de Certificado Digital Modelo CNPJ e CPF;</li>
+                    <li>&#10045; Alteração Contratual e baixa CNPJ;</li>
+                    <li>&#10045; Cálculo de IMPOSTO;</li>
+                    <li>&#10045; Emissão de Guias;</li>
+                    <li>&#10045; Emissão da Carteira Digital de Trabalho;</li>
+                    <li>&#10045; Obrigações acessórias;</li>
+                    <li>&#10045; IRPF (Imposto de Renda Anual Pessoa Física).</li>
+                  </ul>
+                </div> 
+        </div>
+        
     </main>
-    <!-- footer>div#*2 -->
+    <!-- Começo do footer -->
     <footer>
+    <div id="footer">
+        <!-- Endereço -->
         <div id="end">
-            Rua Das Palmeiras, 261, sala 47 (próximo ao metrô Santa Cecília) - São Paulo/SP <br>
-            telefones: (11) 3667-5341 <br>
+            Rua Das Palmeiras nº 261 Sala 47<br>
+            Bairro Santa Cecília<br> 
+            (próximo ao metrô Santa Cecília)<br> 
+            São Paulo/SP CEP(01226-010)<br>
+            CNPJ: 13.504.669/0001-62<br>
+            
+            telefones: (11) 3667-5341<br>
             (11) 9-7698-2988
         </div>
+        <!-- Redes Sociais -->
         <div id="redes">
-                <nav>
-                    <ul>
-                        <li><a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
-                        <li><a href="http://www.youtube.com"><i class="fab fa-youtube-square"></i></a></li>
-                    </ul>
-                </nav>
+            <nav>
+                 <ul>
+                     <li><a href="https://api.whatsapp.com/send?l=pt&phone=5511976982988"><i class="fab fa-whatsapp-square"></i></a></li>
+                     <li><a href="mailto:contadora.c@uol.com.br"><i class="fas fa-envelope-square"></i></a></li>
+                     <li><a href="https://www.instagram.com/express_contabilidade_sp/"><i class="fab fa-instagram-square"></i></a></li>
+                     
+                 </ul>
+             </nav>
+       </div>
+    </div>
+        <!-- Copyright -->
+        <div id="copyright">
+            <p>Copyright © 2021 - Express Contabilidade<br>
+               Todos os direitos reservados.</p>
+            <p>Criado & Desenvolvido por Luciana Ferraz do Amaral Martins</p>
         </div>
+    
     </footer> 
+        <!-- Final do footer -->
 </body>
 </html>
+
+
+
