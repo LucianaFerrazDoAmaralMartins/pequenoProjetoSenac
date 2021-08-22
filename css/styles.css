@@ -1,0 +1,684 @@
+        /* 
+        font-family: 'EB Garamond', serif;
+        font-family: 'Libre Baskerville', serif;
+        */
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            /* um elemento abaixo do outro */
+            flex-direction: column;
+            background-color: #000;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            flex: 2;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Libre Baskerville', serif;
+        }
+        header nav{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* não aparecerem os ícones */
+        header #menu, 
+        header nav #fechar{
+            display: none;
+        }
+        header nav ul{
+            list-style: none;
+        }
+        header nav ul li{
+            /* background-color: #fff; */
+            display: inline-block;
+            padding: 15px 25px;
+            transition: ease 0.5s;
+        }
+        header nav ul li a{
+            font-family: 'EB Garamond', serif;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        /* quando eu passar o ponteiro do mousse no "li" ele formata o "a"*/
+        header nav ul li:hover > a{
+            color: rgb(109, 104, 105);
+        }
+        
+        main{
+            /* técnica usada para centralizar o conteúdo */
+            flex: 1;         
+        }
+        main #banner{
+            width: 100%;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        main #banner img{
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        main h1 {
+            font-family: 'EB Garamond', serif;
+            position: absolute;
+            width: 400px;
+            bottom:500px;
+            right: 400px;
+            color: #fac304; 
+            font-size: 1.9em;
+            display: flex;
+            justify-content: center;  
+        }
+        
+        main #home p{
+            position: absolute;
+            bottom:0px;
+            right: 150px;
+            height: 400px;
+            width: 800px;
+            text-align: justify;
+            display: flex;
+            justify-content: center;
+            font-family: 'Libre Baskerville', serif; 
+            font-size: 1.4em;
+            color: #fff;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 30px;
+
+        }    
+        
+        footer{
+            display: flex;
+            flex-direction: column;
+            background-color: #000;
+            font-family: 'Libre Baskerville', serif; 
+            padding: 50px;
+        }
+        footer #footer{
+            display: flex;
+            flex-direction: row;
+        }
+
+        footer #redes, footer #end{
+            flex: 50%;
+            color: #fff;
+        }
+
+        footer #end {
+            position: relative;
+            top: auto;
+            text-align: left;
+            width: 100%;
+            /* padding-right: 50px; */
+            margin-left: 400px;
+            padding-top: 10px;
+            float:left;
+            font-size: 0.9em;
+            line-height: 30px;
+        }
+        footer #end p {
+            font-size: 0.9em;
+            
+        }
+        footer #redes{
+            position: absolute;
+            float: right;
+            margin-left: 1050px;
+            margin-top: 0;
+        }
+        
+        footer #redes ul{
+            /* para tirar as bolinhas */
+            list-style: none;
+        }
+        
+        footer #redes ul li{
+            display: inline-block;
+           
+        } 
+
+        footer #redes ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        footer #redes ul li a i{
+            font-size: 4em;
+            color: #fff;
+            margin: 10px;
+            
+        }
+        
+        footer #copyright {
+            position: relative;
+            top:0;
+            height: 35px;
+            width: 100%;
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            align-items: center;
+            float: left;
+        }
+        
+        #copyright p {
+            color: #fff;
+            line-height: 35px;
+            
+        }
+        main #home{
+            /* padding: 100px; */
+            background-color: #000;
+            margin-left: 50px;
+            line-height: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        main #layout h1{
+            font-family: 'EB Garamond', serif;
+            margin-left: 50px;
+            line-height: 50px;
+        }
+
+        main #home div{
+            font-family: 'Libre Baskerville', serif;
+            padding-left: 50px; 
+            padding-right: 50px;
+            /* distancia entre as linhas */
+            line-height: 40px;
+            text-align: justify;
+            margin-left: 50px;
+            
+        }
+    /* ======= SERVIÇO ====== */
+        
+        main #servico{
+            display: inline-block;
+            position: absolute;
+            margin-top: 200px;
+            left: 130px;
+            width: 800px;
+            height: auto; 
+            
+        }
+        main #servico ul li{
+            right: 1000px;
+            height: 60px;
+            width: 100%;
+            list-style: none;
+            text-align: justify;
+            font-family: 'Libre Baskerville', serif; 
+            font-size: 1.4em;
+            color: #fff;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 30px;
+            align-items: center;
+          
+        }
+        main h2 {
+            font-family: 'EB Garamond', serif;
+            position: absolute;
+            width: 400px;
+            bottom:500px;
+            left: 40px;
+            color: #fac304; 
+            font-size: 1.9em;
+            display: flex;
+            justify-content: center;  
+        }
+
+        main #layout h2{
+            margin-left: 50px;
+            line-height: 50px;
+        }
+
+
+    /* ======= CONTATO ====== */
+        main #mapa {
+            display: flex;
+            flex-direction:column;
+            padding-bottom: 20px;
+            padding: 40px;
+        }
+        main #infoContato{
+            display: flex;
+            flex-direction:column;
+            background-color: #fff;
+                
+        }
+        main #infoContato h2{
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+            margin: 20px;
+        }
+        
+        main #infoContato p{
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            margin: 15px;
+        }
+      
+        main form{
+            display: flex;
+            flex-direction:column;
+            position: relative;
+            float: left;
+            align-items: center;
+            width: 40%;
+            padding: 20px;
+            margin: 100px;
+        }
+      
+        main #form h3{
+            font-size: 1.4em;
+            color: #fff;
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+            margin: 17px;
+        }
+        
+        /* inputs nome, email, telefone e submit fiquem coma a mesa formatação */
+        main form input, 
+        main form textarea{
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 1.0em;
+            font-family: 'Libre Baskerville', serif;
+        }
+        main form textarea{
+            height: 200px;
+        }
+        /* formatação do botão ENVIAR */
+        main form input[type=submit]{
+            background-color: #fff;
+            font-family: 'Libre Baskerville', serif;
+            width: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.0em;
+        }
+
+        /* ---------break points para o projeto ----------- */
+         /* 3 intervalos de break point*/
+        
+         /*-------------------* Telas de smartphones ---------*/
+        @media (min-width: 0px) and (max-width: 575.98px) {
+           
+            header nav ul li a{
+                font-size: 1.1em;
+            }
+            header nav ul li{
+                display: inline-block; 
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #000;
+              
+            }
+            header #menu, 
+            header nav #fechar{
+                display: block;
+            }
+            header nav{
+                background-color: #000;
+            /* v(viewport) h (height); 100% da altura da tela do dispositivo */
+                height: 100vh;             
+            /* descolar o layout*/
+                position: fixed;
+            /* fazer a barra iniciar no topo do navegador e do lado de fora a esquerda do navegador */
+                top: 0;
+            /* esconder o menu da tela do dispositivo */
+                left: -250px;
+                width: 200px;
+                padding-top: 100px;
+                text-align: left;
+            /* animação */
+                transition: ease 0.5s;
+            }
+            header #menu{
+                position: fixed;
+                top: 10px;
+                left: 10px;
+            }
+            header nav #fechar{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            main #home{
+                background-color: #000;
+                
+            }
+            main #home p{
+                width: 90%;
+                margin: 0 auto;
+                font-size: 0.8em;
+                padding-left: 10px;
+                padding-right: 10px;
+                line-height: 25px;
+                right: 0px;
+                position: relative;
+                background-color: #000;  
+                padding-top: 40px;  
+                height: auto;               
+            }
+            main h1{
+                font-size: 1.2em;
+                position: absolute;
+                top: 485px;
+                z-index: 10000;
+                left: 0px;
+                margin-left: 0;
+            }
+            main h2{
+                font-size: 1.2em;
+                position: absolute;
+                top: 495px;
+                z-index: 10000; 
+                left:0px;
+                padding-right: 220px;
+                margin-bottom: 40px;
+                width: 115%;
+                height: 30px;
+                      
+            }
+        /* ======= SERVIÇO ====== */
+            main #servico{
+                width: 100%;
+                background-color: #000;
+                padding-left: 0px; 
+                left: 10px;
+                padding-right: 40px;
+                padding-left: 20px;
+                padding-top: 40px;
+                padding-bottom: 20px;
+                align-items: center;
+                
+            }
+            main #servico ul li{
+                display: flex;
+                /* flex-direction: row */
+                position: relative;
+                color: #fff;
+                font-size: 0.8em;
+                height: 50px;
+                line-height: 30px;
+                list-style:none;
+                padding:0px 0px 0px 0px;
+	            margin: 0px 0px 0px 0px;
+                bottom: 495px;
+                background-color: aquamarine;                
+            }
+        /* ======= CONTATO ====== */
+            main #mapa {
+            width: 100%;
+            padding:0px 0px 0px 0px;
+	        margin: 0px 0px 0px 0px;
+            bottom: 0px;
+            }
+            main #infoContato{
+            display: flex;
+            flex-direction:column;
+            background-color: #000;
+            left: 100px;
+              
+            }
+           
+            main #infoContato p{
+            width: 95%;
+            padding-top: 20px;
+            color: #fff;
+            font-size: 0.8m;
+            margin: 15px;
+            }
+      
+            main form{
+            float: none;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            margin: 0px;
+            margin-top: 10px;
+            }
+      
+            main #form h3{
+            font-size: 1.2em;
+            text-align: center;
+            margin: 17px;
+            }
+        
+        /* inputs nome, email, telefone e submit fiquem coma a mesa formatação */
+            main form input, 
+            main form textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 0.8em;
+            
+            }
+            main form textarea{
+            height: 200px;
+            }
+        /* formatação do botão ENVIAR */
+            main form input[type=submit]{
+            width: 30%;
+            font-size: 0.9em;
+            }
+        /* ======= RODAPÉ ====== */
+            footer{
+            display: flex;   
+            width: 100%;
+            }
+
+            footer #footer{
+                flex-direction: column;
+            }
+            
+            footer #redes{  
+                position: relative;
+                float: none;
+                margin-left: 20px;
+                margin-top: 40px;
+                left: 0px;
+                background-color: #0000;                       
+            }  
+            
+            footer #end{
+                background-color: #0000; 
+                margin-left:0px;   
+                text-align: center;
+                font-size: 0.8em;
+                top: 0;
+                margin-top: 20px;
+            } 
+            
+            footer #copyright {
+                margin-bottom: 0px;
+                align-items: center;
+            }
+            
+            footer #copyright p {
+                background-color: #0000;                   
+                margin-top: 20px;
+                text-align: center;
+                font-size: 0.7em;
+            
+            }
+                
+            
+    }
+
+ /* ====================== Telas de tablets ========================= */
+       
+        @media (min-width: 576px) and (max-width: 767.98px) {
+          
+        header nav ul li a{
+            font-size: 1.1em;
+        }
+        header nav ul li{
+            display: inline-block; 
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #000;
+          
+        }
+        header #menu, 
+        header nav #fechar{
+            display: block;
+        }
+        header nav{
+            background-color: #000;
+        /* v(viewport) h (height); 100% da altura da tela do dispositivo */
+            height: 100vh;             
+        /* descolar o layout*/
+            position: fixed;
+        /* fazer a barra iniciar no topo do navegador e do lado de fora a esquerda do navegador */
+            top: 0;
+        /* esconder o menu da tela do dispositivo */
+            left: -250px;
+            width: 200px;
+            padding-top: 100px;
+            text-align: left;
+        /* animação */
+            transition: ease 0.5s;
+        }
+        header #menu{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        header nav #fechar{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        main #home{
+            background-color: #000;
+            
+        }
+        main #home p{
+            width: 90%;
+            margin: 0 auto;
+            text-align: justify;
+            font-size: 1.0em;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 30px;
+            right: 0px;
+            position: relative;
+            background-color: #000;  
+            padding-top: 100px;  
+            height: auto;               
+        }
+        main h1{
+            font-size: 1.8em;
+            position: absolute;
+            top: 585px;
+            z-index: 10000;
+            left: 40px;
+        }
+        main #layout h2{
+            font-size: 1.8em;
+            position: absolute;
+            top: 585px;
+            z-index: 10000;
+            left: 40px;
+        }
+        main #servico{
+            background-color: #000;
+            padding-left: 100px; 
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+           
+            align-items: center;
+        }
+        main #servico ul li{
+            color: #fff;
+            font-size: 1.0em;
+                     
+        }
+        /* ======= Rodapé ====== */
+        footer{
+            display: flex;   
+            width: 100%;
+        } 
+        footer #footer{
+            flex-direction: column;
+        }
+        footer #redes{  
+            position: relative;
+            float: none;
+            margin-left: 0px;
+            margin-top: 0;
+            left: 200px;
+            background-color: #0000;                       
+        }  
+        footer #end{
+            background-color: #0000; 
+            margin-left:30px;   
+            text-align: center;
+
+        } 
+        footer #copyright {
+            margin-bottom: 60px;
+            
+        }
+        footer #copyright p {
+            background-color: #0000;                   
+            margin-top: 10px;
+            align-items: center;
+        }
+            
+        }
+
+
+ /* ===================== Telas de Desktops ======================= */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            header nav{
+                width: 100%;
+        }
+
+        /* Break point - Formatação para a página HOME nas faixas 1 e 2 */
+        main #home1{
+            padding-left: 10px; 
+            padding-right: 10px;
+        }
+        main #home{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        /* elemento CLASS tema referência como ponto */
+        /* ID usamos # */
+        .ajustePHome{
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }    
+        
+        /* Break point - Formatação para a página CONTATO */
+        main form{
+            width: 90%;
+        }
+        /* ajustar o botão enviar */
+        main form input[type="submit"]{
+            width: 15%;
+        }   
+        
+    }
