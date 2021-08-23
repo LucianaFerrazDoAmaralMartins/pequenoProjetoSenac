@@ -73,16 +73,17 @@
             margin: 0;
             padding: 0;
         }
-        main h1 {
+        main h1{
+            display: flex;
+            position: absolute;
             font-family: 'EB Garamond', serif;
             width: 100%;
-            bottom:500px;
+            bottom:450px;
+            left: 1000px;
             margin-left: 0px;
             margin-right: 0px;
             color: #fac304; 
             font-size: 1.9em;
-            display: flex;
-            justify-content: center;  
         }
         
         main #home p{
@@ -369,13 +370,14 @@
             }
             main h1{
                 font-size: 1.4em;
-                position: absolute;
-                top: 485px;
+                position: relative;
+                top: 200px;
                 z-index: 10000;
                 left: 0px;
-                margin-left: 0px;
-                margin-top: 30px;
+                margin-left: 30px;
+                margin-top: 0px;
                 margin-right: 10px;
+
             }
            
         /* ======= SERVIÇO ====== */
@@ -460,6 +462,7 @@
             color: #fff;
             font-size: 0.8m;
             margin: 15px;
+            right: 20px;
             line-height: 20px;
             margin-left: 20px;
             margin-right: 20px;
@@ -510,7 +513,7 @@
             footer #redes{  
                 position: relative;
                 float: none;
-                margin-left: 80px;
+                margin-left:20px;
                 margin-top: 0px;
                 left: 0px;
                 background-color: #0000;                       
