@@ -59,6 +59,7 @@
             /* técnica usada para centralizar o conteúdo */
             flex: 1;         
         }
+    /* ======= HOME ====== */
         main #banner{
             width: 100%;
             background-repeat: no-repeat;
@@ -74,10 +75,10 @@
         }
         main h1 {
             font-family: 'EB Garamond', serif;
-            position: absolute;
-            width: 400px;
+            width: 100%;
             bottom:500px;
-            right: 400px;
+            margin-left: 0px;
+            margin-right: 0px;
             color: #fac304; 
             font-size: 1.9em;
             display: flex;
@@ -96,12 +97,135 @@
             font-family: 'Libre Baskerville', serif; 
             font-size: 1.4em;
             color: #fff;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
             line-height: 30px;
 
         }    
+           
+        main #home{
+            background-color: #000;
+            margin-left: 50px;
+            line-height: 30px;
+            padding: 0;
+            margin: 0;
+        }
+            
+    /* ======= SERVIÇO ====== */
         
+        main #servico{
+            display: inline-block;
+            position: absolute;
+            margin-top: 200px;
+            left: 130px;
+            width: 800px;
+            height: auto; 
+            
+        }
+        main #servico ul li{
+            position: relative;
+            right: 0px;
+            height: auto;
+            width: 100%;
+            list-style: none;
+            text-align: justify;
+            font-family: 'Libre Baskerville', serif; 
+            font-size: 1.4em;
+            color: #fff;
+            bottom: 800px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 40px;
+            align-items: center;
+          
+        }
+        
+        main #servico h2{
+            font-family: 'EB Garamond', serif;
+            position: absolute;
+            width: 400px;
+            bottom:1150px;
+            left: 10px;
+            color: #fac304; 
+            font-size: 1.9em;
+            display: flex;
+            justify-content: left;  
+          
+        }
+         
+    /* ======= CONTATO ====== */
+        main #mapa {
+            display: flex;
+            flex-direction:column;
+            padding-bottom: 20px;
+            padding: 40px;
+        }
+        main #infoContato{
+            display: flex;
+            flex-direction:column;
+            background-color: #000;
+                
+        }
+        main #infoContato h2{
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            font-size: 1.4em;
+            color: #fac304; 
+            left: 0px;
+          
+        }
+        
+        main #infoContato p{
+            text-align: center;
+            font-family: 'Libre Baskerville', serif;
+            margin: 15px;
+            color: #fff;
+        }
+      
+        main form{
+            display: flex;
+            flex-direction:column;
+            position: relative;
+            float: left;
+            align-items: center;
+            width: 40%;
+            padding: 20px;
+            margin: 100px;
+        }
+      
+        main #form h3{
+            font-size: 1.4em;
+            color: #fff;
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+            margin: 17px;
+        }
+        
+        /* inputs nome, email, telefone e submit fiquem coma a mesa formatação */
+        main form input, 
+        main form textarea{
+            width: 90%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 1.0em;
+            font-family: 'Libre Baskerville', serif;
+        }
+        main form textarea{
+            height: 200px;
+        }
+        /* formatação do botão ENVIAR */
+        main form input[type=submit]{
+            background-color: #fff;
+            font-family: 'Libre Baskerville', serif;
+            width: 15%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.0em;
+        }
+    /* ======= FOOTER ====== */
         footer{
             display: flex;
             flex-direction: column;
@@ -179,140 +303,6 @@
             line-height: 35px;
             
         }
-        main #home{
-            /* padding: 100px; */
-            background-color: #000;
-            margin-left: 50px;
-            line-height: 30px;
-            padding: 0;
-            margin: 0;
-        }
-        main #layout h1{
-            font-family: 'EB Garamond', serif;
-            margin-left: 50px;
-            line-height: 50px;
-        }
-
-        main #home div{
-            font-family: 'Libre Baskerville', serif;
-            padding-left: 50px; 
-            padding-right: 50px;
-            /* distancia entre as linhas */
-            line-height: 40px;
-            text-align: justify;
-            margin-left: 50px;
-            
-        }
-    /* ======= SERVIÇO ====== */
-        
-        main #servico{
-            display: inline-block;
-            position: absolute;
-            margin-top: 200px;
-            left: 130px;
-            width: 800px;
-            height: auto; 
-            
-        }
-        main #servico ul li{
-            right: 1000px;
-            height: 60px;
-            width: 100%;
-            list-style: none;
-            text-align: justify;
-            font-family: 'Libre Baskerville', serif; 
-            font-size: 1.4em;
-            color: #fff;
-            padding-bottom: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
-            line-height: 30px;
-            align-items: center;
-          
-        }
-        main h2 {
-            font-family: 'EB Garamond', serif;
-            position: absolute;
-            width: 400px;
-            bottom:500px;
-            left: 40px;
-            color: #fac304; 
-            font-size: 1.9em;
-            display: flex;
-            justify-content: center;  
-        }
-
-        main #layout h2{
-            margin-left: 50px;
-            line-height: 50px;
-        }
-
-
-    /* ======= CONTATO ====== */
-        main #mapa {
-            display: flex;
-            flex-direction:column;
-            padding-bottom: 20px;
-            padding: 40px;
-        }
-        main #infoContato{
-            display: flex;
-            flex-direction:column;
-            background-color: #fff;
-                
-        }
-        main #infoContato h2{
-            text-align: center;
-            font-family: 'EB Garamond', serif;
-            margin: 20px;
-        }
-        
-        main #infoContato p{
-            text-align: center;
-            font-family: 'Libre Baskerville', serif;
-            margin: 15px;
-        }
-      
-        main form{
-            display: flex;
-            flex-direction:column;
-            position: relative;
-            float: left;
-            align-items: center;
-            width: 40%;
-            padding: 20px;
-            margin: 100px;
-        }
-      
-        main #form h3{
-            font-size: 1.4em;
-            color: #fff;
-            text-align: center;
-            font-family: 'EB Garamond', serif;
-            margin: 17px;
-        }
-        
-        /* inputs nome, email, telefone e submit fiquem coma a mesa formatação */
-        main form input, 
-        main form textarea{
-            width: 90%;
-            padding: 10px;
-            margin: 5px;
-            font-size: 1.0em;
-            font-family: 'Libre Baskerville', serif;
-        }
-        main form textarea{
-            height: 200px;
-        }
-        /* formatação do botão ENVIAR */
-        main form input[type=submit]{
-            background-color: #fff;
-            font-family: 'Libre Baskerville', serif;
-            width: 15%;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 1.0em;
-        }
 
         /* ---------break points para o projeto ----------- */
          /* 3 intervalos de break point*/
@@ -378,41 +368,53 @@
                 height: auto;               
             }
             main h1{
-                font-size: 1.2em;
+                font-size: 1.4em;
                 position: absolute;
                 top: 485px;
                 z-index: 10000;
                 left: 0px;
-                margin-left: 0;
+                margin-left: 0px;
+                margin-top: 30px;
+                margin-right: 10px;
             }
-            main h2{
-                font-size: 1.2em;
-                position: absolute;
-                top: 495px;
-                z-index: 10000; 
-                left:0px;
-                padding-right: 220px;
-                margin-bottom: 40px;
-                width: 115%;
-                height: 30px;
-                      
-            }
+           
         /* ======= SERVIÇO ====== */
+            
+        main #banner{
+            margin-bottom: 0px;
+            bottom: 0px;
+        }
             main #servico{
+                display: inline-block;
+                position: relative;
                 width: 100%;
                 background-color: #000;
+                top: 0px;
                 padding-left: 0px; 
-                left: 10px;
+                left: 40px;
                 padding-right: 40px;
                 padding-left: 20px;
-                padding-top: 40px;
-                padding-bottom: 20px;
+                padding-top: 0px;
+                padding-bottom: 0px;
                 align-items: center;
+                margin-bottom: 0px;
                 
             }
+            main #servico h2{
+                display: inline-block;
+                position: relative;
+                font-size: 1.4em;
+                top: 0px;
+                bottom: 0px;
+                margin-bottom: 20px;
+                left:17px;
+                margin-left: 0px;
+                padding-right: 220px;
+                width: 100%;
+                                     
+            }
             main #servico ul li{
-                display: flex;
-                /* flex-direction: row */
+                display: inline-block;
                 position: relative;
                 color: #fff;
                 font-size: 0.8em;
@@ -421,9 +423,11 @@
                 list-style:none;
                 padding:0px 0px 0px 0px;
 	            margin: 0px 0px 0px 0px;
-                bottom: 495px;
-                background-color: aquamarine;                
+                bottom: 0px;
+                left: 20px;
+                           
             }
+           
         /* ======= CONTATO ====== */
             main #mapa {
             width: 100%;
@@ -438,13 +442,27 @@
             left: 100px;
               
             }
+            main #infoContato h2{
+            text-align: left;
+            font-family: 'EB Garamond', serif;
+            margin-top: 80px;
+            font-size: 1.4em;
+            color: #fac304; 
+            left: 30px;
+            margin-left: 35px;
+            margin-bottom: 20px;
+              
+            }
            
             main #infoContato p{
             width: 95%;
-            padding-top: 20px;
+            padding-top: 0px;
             color: #fff;
             font-size: 0.8m;
             margin: 15px;
+            line-height: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
             }
       
             main form{
@@ -492,8 +510,8 @@
             footer #redes{  
                 position: relative;
                 float: none;
-                margin-left: 20px;
-                margin-top: 40px;
+                margin-left: 80px;
+                margin-top: 0px;
                 left: 0px;
                 background-color: #0000;                       
             }  
@@ -504,7 +522,7 @@
                 text-align: center;
                 font-size: 0.8em;
                 top: 0;
-                margin-top: 20px;
+                margin-top: 0px;
             } 
             
             footer #copyright {
@@ -567,10 +585,16 @@
             top: 10px;
             right: 10px;
         }
-        main #home{
+        main {
             background-color: #000;
             
         }
+        main #banner{
+            width: 100%;
+            background-color: #000;
+            height: auto;
+
+        } 
         main #home p{
             width: 90%;
             margin: 0 auto;
@@ -585,34 +609,131 @@
             padding-top: 100px;  
             height: auto;               
         }
-        main h1{
+        main #layout h1{
             font-size: 1.8em;
             position: absolute;
-            top: 585px;
-            z-index: 10000;
-            left: 40px;
+          left: 0px;
+
         }
-        main #layout h2{
-            font-size: 1.8em;
-            position: absolute;
-            top: 585px;
-            z-index: 10000;
-            left: 40px;
-        }
-        main #servico{
-            background-color: #000;
-            padding-left: 100px; 
-            padding-right: 100px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+    /* ======= SERVIÇO ====== */
+        
+        main #servico h2{
            
+            font-size: 1.8em;
+            display: inline-block;
+            position: relative;
+            top: 0px;
+            margin-top: 0px;
+            z-index: 10000;
+            left: 0px;
+            right: 0px;
+            width: 30%;
+            height: 40px;
+            bottom: 0px;
+            margin-bottom: 20px;
+
+        }
+
+        main #servico{
+            display: inline-block;
+            position: relative;
+            top:0px;
+            background-color: #000;
+            padding-left: 10px; 
+            padding-right: 40px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            bottom: 0px;
             align-items: center;
+            width: 100%;
+          
         }
         main #servico ul li{
+            display: inline-block;
+            position: relative;
             color: #fff;
-            font-size: 1.0em;
+            font-size: 1.2em;
+            margin-right: 40px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            line-height: 45px;
+            margin-right: 60px;
+            margin-left: 0px;
+            padding-right: 40px;
+            right: 50px;
                      
         }
+        /* ======= CONTATO ====== */
+            main #mapa {
+            width: 100%;
+           align-items: center;
+            padding:0px 0px 0px 0px;
+	        margin: 0px 0px 0px 0px;
+            bottom: 0px;
+            }
+            main #infoContato{
+            display: flex;
+            flex-direction:column;
+            background-color: #000;
+            left: 100px;
+              
+            }
+            main #infoContato h2{
+            text-align: left;
+            font-family: 'EB Garamond', serif;
+            margin-top: 80px;
+            font-size: 1.4em;
+            color: #fac304; 
+            left: 30px;
+            margin-left: 35px;
+            margin-bottom: 20px;
+              
+            }
+           
+            main #infoContato p{
+            width: 95%;
+            padding-top: 0px;
+            color: #fff;
+            font-size: 0.8m;
+            margin: 15px;
+            line-height: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            }
+      
+            main form{
+            float: none;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            margin: 0px;
+            margin-top: 10px;
+            }
+      
+            main #form h3{
+            font-size: 1.2em;
+            text-align: center;
+            margin: 17px;
+            }
+        
+        /* inputs nome, email, telefone e submit fiquem coma a mesa formatação */
+            main form input, 
+            main form textarea{
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 0.8em;
+            
+            }
+            main form textarea{
+            height: 200px;
+            }
+        /* formatação do botão ENVIAR */
+            main form input[type=submit]{
+            width: 30%;
+            font-size: 0.9em;
+            }
         /* ======= Rodapé ====== */
         footer{
             display: flex;   
